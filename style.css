@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+  }
+
+html,
+body {
+margin: 0;
+padding: 0;
+width: 100%;
+min-height: 100%;
+}
+
+body {
+background: #111;
+font-family: Arial, sans-serif;
+}
+
+.page {
+width: 100%;
+min-height: 100vh;
+}
+
+.screen {
+display: none;
+width: 100%;
+min-height: 100vh;
+padding: 25px;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+text-align: center;
+background: #fff8ef;
+}
+
+.screen.active {
+display: flex;
+}
+
+.top-text {
+position: absolute;
+top: 10px;
+left: 0;
+width: 100%;
+text-align: center;
+font-size: 12px;
+color: #555;
+}
+
+.shinchan {
+width: 180px;
+max-width: 60vw;
+object-fit: contain;
+margin-bottom: 20px;
+}
+
+h1 {
+margin: 10px 0 25px;
+color: #a92929;
+font-size: 30px;
+}
+
+h2 {
+color: #a92929;
+}
+
+.buttons {
+display: flex;
+justify-content: center;
+gap: 10px;
+}
+
+button {
+border: none;
+padding: 12px 28px;
+margin: 8px;
+border-radius: 30px;
+background: #d83a3a;
+color: white;
+font-size: 18px;
+font-weight: bold;
+cursor: pointer;
+transition: 0.2s;
+}
+
+button:hover {
+transform: scale(1.08);
+}
+
+.gifts {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 20px;
+flex-wrap: wrap;
+}
+
+.gifts img {
+width: 120px;
+cursor: pointer;
+transition: 0.25s;
+}
+
+.gifts img:hover {
+transform: scale(1.1);
+}
+
+.birthday-card {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 25px;
+max-width: 750px;
+padding: 30px;
+background: white;
+border-radius: 20px;
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+margin-bottom: 20px;
+}
+
+.card-left {
+text-align: center;
+}
+
+.card-left h2 {
+margin: 0;
+font-size: 35px;
+}
+
+.card-left h1 {
+margin: 0;
+font-size: 60px;
+}
+
+.friend-photo {
+width: 220px;
+height: 260px;
+object-fit: cover;
+border-radius: 12px;
+}
+
+.cake {
+font-size: 100px;
+margin: 20px;
+}
+
+.memory {
+max-width: 650px;
+padding: 25px;
+background: white;
+border-radius: 20px;
+line-height: 1.6;
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.memory-photo {
+width: 180px;
+height: 180px;
+object-fit: cover;
+border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+.birthday-card {
+flex-direction: column;
+width: 95%;
+}
+
+
+.card-left h1 {
+    font-size: 45px;
+}
+
+.friend-photo {
+    width: 180px;
+    height: 210px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+.gifts img {
+    width: 90px;
+}
+
+
+}
