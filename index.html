@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Surprise</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="page">
+
+    <!-- SCREEN 1 -->
+    <section id="screen1" class="screen active">
+
+        <div class="top-text">
+            This might be the cutest birthday gift ever
+        </div>
+
+        <img
+            src="assets/shinchan-1.gif"
+            class="shinchan"
+            alt="character"
+        >
+
+        <h1>Do you wanna see it?</h1>
+
+        <div class="buttons">
+            <button onclick="yesClick()">YES</button>
+            <button onclick="noClick()">NO</button>
+        </div>
+
+    </section>
+
+
+    <!-- SCREEN 2 -->
+    <section id="screen2" class="screen">
+
+        <div class="top-text">
+            This might be the cutest birthday gift ever
+        </div>
+
+        <img
+            src="assets/shinchan-2.gif"
+            class="shinchan"
+            alt="character"
+        >
+
+        <h1>I have something for you...</h1>
+
+        <button onclick="showScreen('screen3')">
+            CLICK ON
+        </button>
+
+    </section>
+
+
+    <!-- SCREEN 3 -->
+    <section id="screen3" class="screen">
+
+        <h1>Pick a gift 🎁</h1>
+
+        <div class="gifts">
+
+            <img
+                src="assets/gift-1.gif"
+                onclick="openGift(1)"
+                alt="gift"
+            >
+
+            <img
+                src="assets/gift-2.gif"
+                onclick="openGift(2)"
+                alt="gift"
+            >
+
+            <img
+                src="assets/gift-3.gif"
+                onclick="openGift(3)"
+                alt="gift"
+            >
+
+        </div>
+
+        <p>CLICK ON A GIFT</p>
+
+    </section>
+
+
+    <!-- SCREEN 4 -->
+    <section id="screen4" class="screen">
+
+        <div class="birthday-card">
+
+            <div class="card-left">
+
+                <h2>Happy</h2>
+
+                <h1>Birthday</h1>
+
+                <p>To my bestie ❤️</p>
+
+            </div>
+
+            <img
+                src="assets/friend.jpg"
+                class="friend-photo"
+                alt="Friend"
+            >
+
+        </div>
+
+        <button onclick="showScreen('screen5')">
+            NEXT
+        </button>
+
+    </section>
+
+
+    <!-- SCREEN 5 -->
+    <section id="screen5" class="screen">
+
+        <img
+            src="assets/shinchan-3.gif"
+            class="shinchan"
+            alt="character"
+        >
+
+        <h1>MAKE A WISH 🎂</h1>
+
+        <div class="cake">🎂</div>
+
+        <button onclick="showScreen('screen6')">
+            NEXT
+        </button>
+
+    </section>
+
+
+    <!-- SCREEN 6 -->
+    <section id="screen6" class="screen">
+
+        <h1>A little message for you ❤️</h1>
+
+        <div class="memory">
+
+            <img
+                src="assets/friend.jpg"
+                class="memory-photo"
+                alt="Friend"
+            >
+
+            <p>
+                Dear bestie,
+                <br><br>
+                Happy Birthday! ❤️
+                <br><br>
+                I hope you have an amazing day
+                and an even better year ahead.
+            </p>
+
+        </div>
+
+        <button onclick="showScreen('screen7')">
+            NEXT
+        </button>
+
+    </section>
+
+
+    <!-- SCREEN 7 -->
+    <section id="screen7" class="screen">
+
+        <img
+            src="assets/shinchan-1.gif"
+            class="shinchan"
+            alt="character"
+        >
+
+        <h1>
+            Happy Birthday! ❤️
+        </h1>
+
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
